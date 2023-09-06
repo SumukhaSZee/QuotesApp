@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">QuotesApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_and_welcome_to_quotes_application">Hello and Welcome to Quotes Application</string>
+    <string name="press_start_button_to_continue">Press Start Button to continue</string>
+</resources>

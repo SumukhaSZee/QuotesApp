@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.WelcomeFragment">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hello_and_welcome_to_quotes_application" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="125dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/press_start_button_to_continue" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="185dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+
+
+    </FrameLayout>
+</layout>
