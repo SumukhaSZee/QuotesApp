@@ -4,13 +4,14 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.quotesapp.models.QuoteResponseItem
 import com.example.quotesapp.repository.quoterepository
+import com.example.quotesapp.repository.quoterepositoryinterface
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class QuotesViewModel(
-    val quoterepository: quoterepository
+    val quoterepository: quoterepositoryinterface
     ) :ViewModel() {
 
 

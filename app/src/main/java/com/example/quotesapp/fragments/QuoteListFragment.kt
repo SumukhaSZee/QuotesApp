@@ -19,11 +19,12 @@ import com.example.quotesapp.viewmodel.QuotesViewModelProviderFactory
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class QuoteListFragment : Fragment() {
 
     private lateinit var binding: FragmentQuoteListBinding
-    lateinit var viewModel : QuotesViewModel
+    private val viewModel by viewModel<QuotesViewModel>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -38,9 +39,9 @@ class QuoteListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val quoteRepository = quoterepository()
+        /*val quoteRepository = quoterepository()
         val QuotesviewModelProviderFactory = QuotesViewModelProviderFactory(quoteRepository)
-        viewModel = ViewModelProvider(this,QuotesviewModelProviderFactory)[QuotesViewModel::class.java]
+        viewModel = ViewModelProvider(this,QuotesviewModelProviderFactory)[QuotesViewModel::class.java]*/
 
         lifecycleScope.launch(Dispatchers.IO) {
             viewModel.quotesList.collect { quotesList ->
