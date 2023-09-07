@@ -17,7 +17,6 @@ class WelcomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding = FragmentWelcomeBinding.inflate(inflater,container,false)
         binding.lifecycleOwner = viewLifecycleOwner
         return binding.root
